@@ -19,6 +19,7 @@ def choose_db():
     return choice
 
 
+
 def main():
     log("🚀 ETL 파이프라인 시작")
 

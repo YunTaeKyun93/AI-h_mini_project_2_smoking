@@ -10,7 +10,7 @@ def load_to_mysql(df):
 
     cols = ", ".join(df.columns)
     placeholders = ", ".join(["%s"] * len(df.columns))
-    sql = f"INSERT INTO health_table ({cols}) VALUES ({placeholders})"
+    sql = f"INSERT INTO smoking_health_team ({cols}) VALUES ({placeholders})"
 
     data = [tuple(row) for row in df.to_numpy()]
 

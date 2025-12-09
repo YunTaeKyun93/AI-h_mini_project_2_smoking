@@ -11,8 +11,8 @@ load_dotenv(dotenv_path)
 # ---------------------------------------------------------
 # 📌 공통 설정
 # ---------------------------------------------------------
-RAW_DATA_PATH = os.getenv("RAW_DATA_PATH")
-PROCESSED_DATA_PATH = os.getenv("PROCESSED_DATA_PATH")
+RAW_DATA_PATH = os.path.join(BASE_DIR, "data/raw/smoking_health_data_isoforest_cleaned.csv")
+PROCESSED_DATA_PATH = os.path.join(BASE_DIR, "data/processed/processed_data.csv")
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "50000"))
 
 # ---------------------------------------------------------
